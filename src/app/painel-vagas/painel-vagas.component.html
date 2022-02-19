@@ -1,0 +1,80 @@
+<section>
+  <form>
+    <div class="border">
+      <div class="titulo">
+        <h1>Cadastrar Vagas</h1>
+      </div>
+      <div class="mb-3">
+        <input
+          type="text"
+          name="id"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="Id"
+          [(ngModel)]="vaga.id"
+        />
+      </div>
+      <div class="mb-3">
+        <input
+          type="text"
+          name="nome"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="Nome"
+          [(ngModel)]="vaga.nome"
+        />
+      </div>
+      <div class="mb-3">
+        <input
+          type="text"
+          name="foto"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="Foto"
+          [(ngModel)]="vaga.foto"
+        />
+      </div>
+      <div class="mb-3">
+        <input
+          type="text"
+          name="descricao"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="Descrição"
+          [(ngModel)]="vaga.descricao"
+        />
+      </div>
+      <div class="mb-3">
+        <input
+          type="text"
+          name="salario"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="Salário"
+          [(ngModel)]="vaga.salario"
+        />
+      </div>
+      <div class="margin">
+        <div class="d-grid gap-2 d-md-block">
+          <button class="btn btn-danger" type="button" (click)="cadastrar()">
+            Cadastrar
+          </button>
+          <button
+            class="btn btn-danger"
+            type="button"
+            (click)="atualizar(vaga.id)"
+          >
+            Atualizar
+          </button>
+          <button
+            class="btn btn-danger"
+            type="button"
+            (click)="excluir(vaga.id)"
+          >
+            Excluir
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+</section>

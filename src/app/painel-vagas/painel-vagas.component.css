@@ -1,0 +1,34 @@
+.border{
+  display: block;
+  justify-content: center;
+  border-radius: 5px;
+  text-align: right;
+  width: 22rem;
+}
+
+.mb-3 {
+  display: flex;
+  padding: 0px;
+  margin: 8px;
+}
+.titulo {
+  text-align: center;
+  color:#fff;
+  border-radius: 5px;
+  font-style: italic;
+  justify-content: center;
+  font-size: 18px;
+  margin: 8px;
+  background-color: #aa0b25;
+}
+
+button {
+  position: relative;
+  margin-left: 5px;
+}
+
+.margin {
+  margin: 8px;
+}
+
+
